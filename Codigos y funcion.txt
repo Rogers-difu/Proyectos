@@ -1,0 +1,179 @@
+--p -------Textos
+--h1 ------Titulos
+(Dependiendo del h1, h2, h3... cambia el tamaño)
+align = "center" ------------Centrar
+--a -------- Opcion Subrayada
+--a "nombre de otro archivo a abrir : Pai.html" Se llama en la pag solicitada
+--div ------------ divisiones 
+---table---- tablas
+---td--- filas
+---tr--- columnas
+---br--- salto de linea
+______________________________________
+--- form action = "Ubicacion donde queremos llegar"
+---- button}ir al index}button
+_____________________________________
+---ul--- listas ordenadas con puntos 
+---li para cada opcion de la lista 
+________________________________________
+---ol--- listas ordenadas con numeros
+---li para cada opcion de la lista 
+---li id=idlista para modificar cada opcion en especifico de un estilo 
+________________________________________
+
+
+
+
+
+---------------------------------------------------------------------------
+ESTILOS CSS
+-----Color del fondo------ 
+body
+{
+   background-color: blue;
+}
+------------------------------------------
+.prop1
+{
+   background-color: white
+}
+
+------------------------------------------
+COLOR DE LETRAS
+
+h1
+{
+  text-align: justifity;
+  color: chartreuse;
+}
+
+-----------------------------------------
+
+#idlista
+{
+  background-color: white
+}
+elemento especifico de la lista
+------------------------------------------
+
+se le llama al css en la pagina principal index 
+en la parte del head: 
+
+link rel="stylesheet" href="carpeta/nombre del documento"
+
+en el body class="nombre del estilo" 
+
+________________________________________________________________________
+<div class="contenedor-grid">
+        <div class="container p-3 my-3 bg-dark text-white">
+            <h2>Mi Empresa PA2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque molestias atque repellendus illo ipsam amet, cupiditate iure, beatae officiis delectus expedita sunt voluptatem maxime modi error accusantium non nemo aut?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit iure dolores placeat eos veritatis animi fuga quibusdam aliquid, ullam ab magni nemo similique, unde optio impedit eaque accusamus perferendis nam.</p>
+
+        </div>
+
+        <div>
+            <div class="container p-3 my-3 border">
+                <h3>Visión</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ducimus tempore quia maiores veritatis ea soluta deserunt fuga error placeat quaerat dicta consectetur doloremque corporis reprehenderit quam vel neque ipsa!</p>
+            </div>
+            <div class="container p-3 my-3 bg-primary text-white">
+                <h3>Misión</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptatum aut dicta ipsa praesentium expedita sit reiciendis neque laudantium distinctio? Dolorem repellat quisquam totam quo quae laborum neque accusantium esse.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1em;
+}
+
+____________________________________________________________________________________
+VIDEOS
+
+<nav>
+      <div align = "center">
+        <iframe src="Fotografía y Vídeo (Spot Abril 2014).mp4" height="500px" width="50%"></iframe>
+      </div>
+    </nav>
+
+________________________________________________________________________________________
+LIBRERIAS A USAR
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/estilos.css">
+
+__________________________________________________________________________________________
+body{
+
+    background-image: url('../message-1263977_960_720.png');
+    width: 100%;
+}
+
+.prop1{
+    background-image: url('../96127205-icono-de-línea-web-carta-leer-mensaje-.jpg');
+}
+
+.prop2{
+    background-image: url('../107066838-ilustración-de-vector-plano-de-contorno-de-contorno-con-nuevos-mensajes-de-texto-en-el-mensaje-de-presu.jpg');
+}
+
+.prop3{
+    background-image: url('../descarga.jpg');
+}
+
+________________________________________________________________________________________
+</div>   
+<div class="spinner-border"></div> 
+<a href="../Mensajes/Leer Mensajes/LeerMensajes.html" class="btn btn-info" role="button">Leer Mensajes</a>
+<div class="spinner-border"></div>
+<a href="../Mensajes/Nuevo Mensaje/NuevoMensaje.html" class="btn btn-info" role="button">Nuevo Mensaje</a>
+<div class="spinner-border"></div>
+<a href="../Mensajes/Mensajes Antiguos/MensajesAntiguos.html" class="btn btn-info" role="button">Mensajes Historicos</a>
+</div>    
+
+__________________________________________________________________________________________
+ </div>
+
+      <div class="container p-3 my-3 bg-dark text-white">
+        <div class="container-grid">
+          <form >
+            <div >
+              <label for="email">Nombre:</label>
+              <input type="email" placeholder="Ingrese su Nombre" id="email">
+            </div>
+            <br>
+            <br>
+            <div >
+              <label for="pwd">Numero de Telefono:</label>
+              <input type="password"  placeholder="Ingrese N° telefono" id="pwd">
+            </div>
+            <br>
+            <br>
+            <div >
+              <label for="pwd">Correo Electronico:</label>
+              <input type="password" placeholder="Ingrese Correo Electronico" id="pwd">
+
+              <br>
+              <br>
+
+              <div class="form-group">
+                <label for="comment">Comentarios y Observaciones:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+
+              <br>
+              <br>
+              <div>
+                <button type="submit" >Enviar Datos</button>
+              </div>
+            
+          </form>
+        </div>
+      </div>
+
